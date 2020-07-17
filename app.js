@@ -8,7 +8,12 @@
     // Create Human Object
 
     // Use IIFE to get human data from form
+    (function () {
+        var test = document.getElementById("name").value;
+        console.log('this works');
 
+
+    })();
 
     // Create Dino Compare Method 1
     // NOTE: Weight in JSON file is in lbs, height in inches. 
@@ -30,3 +35,7 @@
 
 
 // On button click, prepare and display infographic
+function myFunction () {
+    console.log(document.getElementById("name").value);
+    console.log('the button works');
+}
